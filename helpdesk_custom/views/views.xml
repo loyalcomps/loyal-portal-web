@@ -34,8 +34,11 @@
 <!--                    <td class="text-center">-->
 <!--                        <span t-field="ticket.sla_deadline" t-options='{"widget": "date"}'/>-->
 <!--                    </td>-->
+
+
+
                     <td class="text-center">
-                        <span t-field="ticket.user_id.name"/>
+<!--                        <span t-field="ticket.user_id.name"/>-->
                     </td>
                     <td class="text-center">
                         <span class="badge badge-pill badge-info" t-field="ticket.stage_id.name"/>
