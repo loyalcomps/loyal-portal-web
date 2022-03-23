@@ -12,6 +12,12 @@
                             </em>
                             <span t-field="tasks[0].sudo().user_id.name"/>
                         </th>
+                        <th t-if="groupby == 'stage'">
+                            <em class="font-weight-normal text-muted">
+                                Task in:
+                            </em>
+                            <span t-field="tasks[0].sudo().stage_id.name"/>
+                        </th>
                         <th t-else="">
                             <em class="font-weight-normal text-muted">
                                 <span t-field="tasks[0].sudo().project_id.label_tasks"/>
