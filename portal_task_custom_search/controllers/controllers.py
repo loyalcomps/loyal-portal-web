@@ -41,6 +41,7 @@ class CustomerPortal(CustomerPortal):
             'none': {'input': 'none', 'label': _('None')},
             'project': {'input': 'project', 'label': _('Project')},
             'user': {'input': 'user', 'label': _('Assigned to')},
+            'stage': {'input': 'stage', 'label': _('Stage')},
         }
         # extends filterby criteria with project the customer has access to
         projects = request.env['project.project'].search([])
@@ -115,6 +116,9 @@ class CustomerPortal(CustomerPortal):
         elif groupby == 'user':
             grouped_tasks = [request.env['project.task'].concat(*g) for k, g in
                              groupbyelem(tasks, itemgetter('user_id'))]
+        elif groupby == 'stage':
+            grouped_tasks = [request.env['project.task'].concat(*g) for k, g in
+                             groupbyelem(tasks, itemgetter('stage_id'))]
         else:
             grouped_tasks = [tasks]
 
