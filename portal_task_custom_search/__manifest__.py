@@ -6,7 +6,7 @@
         This module allows you to sort task by deadline and search task by assigned to""",
 
     'description': """
-        This module allows you to sort task by deadline and search task by assigned to
+        This module allows you to sort task by deadline, search task by assigned to and group by stage. User can choose BG color for stage. 
     """,
 
     'author': "Loyal IT Solutions Pvt Ltd",
