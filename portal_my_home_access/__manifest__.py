@@ -1,26 +1,25 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "portal_my_home_access",
+    'name': "Portal My Home Access",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Restrict access to invoice, quotation and sale order to """,
 
     'description': """
-        Long description of module's purpose
+        Only users in group 'View Portal My Home' can view invoice, quotation and sale order in portal my home view.
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Loyal IT Solutions Pvt Ltd",
+    'website': "http://www.loyalitsolutions.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '13.0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'account'],
+    'depends': ['base', 'account', 'sale'],
 
     # always loaded
     'data': [
