@@ -6,7 +6,8 @@
         Reported on and assigned to fields are added in the ticket view in portal""",
 
     'description': """
-        Reported on and assigned to fields are added in the ticket view in portal
+        Reported on and assigned to fields are added in the ticket view in portal, Filter by stage and group by, User 
+        can choose background colour for each stage
     """,
 
     'author': "Loyal IT Solutions Pvt Ltd",
